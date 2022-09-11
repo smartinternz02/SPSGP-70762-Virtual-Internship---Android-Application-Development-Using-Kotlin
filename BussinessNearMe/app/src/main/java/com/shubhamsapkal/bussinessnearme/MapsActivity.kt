@@ -37,6 +37,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var locationRequest: LocationRequest
     lateinit var locationCallback: LocationCallback
 
+
+
     companion object{
         private const val MY_PERMISSION_CODE: Int = 1000
     }
@@ -79,6 +81,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 Looper.myLooper()
             )
         }
+
+        binding.bottomNavigationView.setOnNavigationItemReselectedListener { item->
+            when(item.itemId){
+                R.id.action_hospital -> nearByPlace("hospital")
+                R.id.action_market -> nearByPlace("market")
+                R.id.action_restaurant -> nearByPlace("restaurant")
+                R.id.action_school -> nearByPlace("school")
+            }
+
+        }
+
+    }
+
+    private fun nearByPlace(typePlace: String)
+    {
 
     }
 
