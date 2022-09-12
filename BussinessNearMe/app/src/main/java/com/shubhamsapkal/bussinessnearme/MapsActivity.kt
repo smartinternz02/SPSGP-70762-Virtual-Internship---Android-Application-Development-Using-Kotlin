@@ -1,4 +1,4 @@
-package com.sonkhiasinghansh.businessmaps
+package com.shubhamsapkal.bussinessnearme
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.sonkhiasinghansh.businessmaps.databinding.ActivityMapsBinding
+import com.shubhamsapkal.bussinessnearme.databinding.ActivityMapsBinding
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 

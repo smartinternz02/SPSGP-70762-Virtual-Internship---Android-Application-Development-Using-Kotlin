@@ -1,4 +1,4 @@
-package com.sonkhiasinghansh.businessmaps
+package com.shubhamsapkal.bussinessnearme
 
 import android.Manifest
 import android.content.pm.PackageManager
